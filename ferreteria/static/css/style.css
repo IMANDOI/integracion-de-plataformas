@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+/* logo */
+
+.logo{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    max-height: 6%;
+    max-width: 6%;
+}
+
+/* Estilos generales del navbar */
+
+/* Basic styles */
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    background-color: #ffffff1f; /* Set background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Navigation links list */
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Arrange links horizontally */
+}
+
+/* Navigation links */
+.nav-item {
+    margin: 0 15px; /* Adjust spacing between links */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333; /* Text color */
+}
+
+.nav-link:hover {
+    color: #007bff; /* Hover color */
+}
+
+/* Login and cart section */
+.login-cart {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Position to the right */
+    text-decoration: none;
+}
+
+.login-btn, .cart-btn {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    color: #333; /* Text color */
+    padding: 10px 15px; /* Adjust padding */
+    margin-left: 15px; /* Spacing between buttons */
+    cursor: pointer;
+}
+
+.cart-btn img{
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.login-btn:hover, .cart-btn:hover {
+    color: #007bff; /* Hover color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Stack links vertically on small screens */
+    }
+    .login-cart {
+        margin-left: 0; /* Center login/cart on small screens */
+    }
+}
+
+/* Fin Estilos generales del navbar */
+
+
+/* carrousel inicio */
+
+
+
+/* carrouserl fin  */
