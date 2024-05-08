@@ -8,3 +8,6 @@ def compras(request):
 
 def inise(request):
     return render(request, 'inise.html')
+
+def registrar(request):
+    return render(request, 'registrar.html')

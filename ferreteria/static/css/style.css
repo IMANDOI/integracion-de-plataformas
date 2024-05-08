@@ -95,6 +95,73 @@ body {
     color: #007bff; /* Hover color */
 }
 
+/* Estilos para el formulario de inicio de sesión */
+
+.login-container {
+    background-color: #fff; /* Color de fondo del contenedor del formulario */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-top: 50px; /* Espacio superior para separar del navbar */
+    padding: 20px; /* Relleno interno */
+    max-width: 400px; /* Ancho máximo del formulario */
+    width: 100%; /* Ancho del formulario */
+    margin-left: auto; /* Centrar horizontalmente */
+    margin-right: auto; /* Centrar horizontalmente */
+}
+
+.login-container h5 {
+    text-align: center; /* Centrar título */
+    margin-bottom: 30px; /* Espacio inferior del título */
+    font-size: 24px; /* Tamaño de letra deseado */
+}
+
+.login-container .form-label {
+    color: #333; /* Color del texto de las etiquetas */
+    font-size: 18px; /* Tamaño de letra deseado */
+}
+
+.login-container .form-control {
+    margin-bottom: 30px; /* Espacio entre los campos */
+    font-size: 18px; /* Tamaño de letra deseado */
+}
+
+.login-container .btn-primary {
+    background-color: #0cb3228f; /* Color de fondo del botón */
+    border-color: #04803c59; /* Color del borde del botón */
+    font-size: 18px; /* Tamaño de letra deseado */
+    padding: 10px 20px; /* Ajustar el relleno del botón según el tamaño del texto */
+}
+
+.login-container .btn-primary:hover {
+    background-color: #39f532; /* Color de fondo del botón al pasar el ratón */
+    border-color: #00b318; /* Color del borde del botón al pasar el ratón */
+    font-size: 18px; /* Tamaño de letra deseado */
+    padding: 10px 20px; /* Ajustar el relleno del botón según el tamaño del texto */
+}
+
+.login-container .d-grid {
+    text-align: center; /* Centrar el contenido del contenedor del botón */
+}
+
+.login-container .card-body {
+    display: flex;
+    flex-direction: column; /* Apilar los elementos verticalmente */
+    align-items: center; /* Centrar horizontalmente los elementos */
+}
+
+.forgot-password-link {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none; /* Quitar subrayado */
+    display: block; /* Para ocupar todo el ancho disponible */
+    text-align: center; /* Centrar horizontalmente el texto */
+    margin-top: 20px;
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .nav-links {

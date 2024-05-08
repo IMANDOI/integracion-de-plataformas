@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-    {% load static %}
+{% load static %}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <title>Ferremas - Tu ferretería online</title>
 </head>
+
 <body>
 
-<!-- cabeza de pagina  -->
+    <!-- cabeza de pagina  -->
     <header> <span class="logo"><img src="{% static 'img/logo.png' %}" alt="" href=></span></header>
     <nav class="navbar">
         <ul class="nav-links">
@@ -21,15 +23,46 @@
         </ul>
         <div class="login-cart">
             <a href="{% url 'inise' %}" class="login-btn">Inicio de sesión</a>
+            <a href="{% url 'registrar' %}" class="login-btn">Registrar</a>
             <a href="{% url 'compras' %}" class="cart-btn"><img src="{% static 'img/carro.png' %}" alt=""></a>
         </div>
     </nav>
-<!-- fin cabeza de pagina -->
-   
-<div class="contenido-i"> 
+    <!-- fin cabeza de pagina -->
 
 
-</div>
- <script src="{% static 'js/script.js' %}"></script>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="card login-container">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Ferremas</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Nombre de Usuario</label>
+                                <input type="text" class="form-control" id="username" name="username">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="password" name="password">
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+                            </div>
+
+                            <div class="text-center">
+                                <a href="#" class="forgot-password-link">¿Olvidaste tu contraseña?</a>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
+
 </html>
