@@ -161,6 +161,59 @@ body {
     text-decoration: underline; /* Subrayado al pasar el ratón */
 }
 
+/* Estilos para el formulario de registro */
+.registro-container {
+    background-color: #fff; /* Color de fondo del contenedor del formulario */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-top: 50px; /* Espacio superior para separar del navbar */
+    padding: 20px; /* Relleno interno */
+    max-width: 400px; /* Ancho máximo del formulario */
+    width: 100%; /* Ancho del formulario */
+    margin-left: auto; /* Centrar horizontalmente */
+    margin-right: auto; /* Centrar horizontalmente */
+}
+
+.registro-container h2 {
+    text-align: center; /* Centrar título */
+    margin-bottom: 30px; /* Espacio inferior del título */
+    font-size: 24px; /* Tamaño de letra deseado */
+}
+
+.registro-container label {
+    color: #333; /* Color del texto de las etiquetas */
+    font-size: 18px; /* Tamaño de letra deseado */
+}
+
+.registro-container input[type="text"],
+.registro-container input[type="email"],
+.registro-container input[type="password"] {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 18px; /* Tamaño de letra deseado */
+}
+
+.registro-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px; /* Tamaño de letra deseado */
+}
+
+.registro-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.registro-container input[type="submit"]:focus {
+    outline: none;
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
