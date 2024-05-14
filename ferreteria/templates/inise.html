@@ -10,9 +10,10 @@
 </head>
 
 <body>
-
-    <!-- cabeza de pagina  -->
-    <header> <span class="logo"><img src="{% static 'img/logo.png' %}" alt="" href=></span></header>
+    <!-- Cabeza de página -->
+    <header>
+        <span class="logo"><img src="{% static 'img/logo.png' %}" alt="Logo de Ferremas"></span>
+    </header>
     <nav class="navbar">
         <ul class="nav-links">
             <li class="nav-item"><a href="{% url 'index' %}" class="nav-link">Inicio</a></li>
@@ -22,47 +23,36 @@
             <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
         </ul>
         <div class="login-cart">
-            <a href="{% url 'inise' %}" class="login-btn">Inicio de sesión</a>
-            <a href="{% url 'registrar' %}" class="login-btn">Registrar</a>
+            <a href="{% url 'formularioRegistro' %}" class="login-btn">Registrar</a>
             <a href="{% url 'compras' %}" class="cart-btn"><img src="{% static 'img/carro.png' %}" alt=""></a>
         </div>
     </nav>
-    <!-- fin cabeza de pagina -->
+    <!-- Fin cabeza de página -->
 
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-4">
-                <div class="card login-container">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Ferremas</h5>
-                        <form>
-                            <div class="mb-3">
-                                <label for="username" class="form-label">Nombre de Usuario</label>
-                                <input type="text" class="form-control" id="username" name="username">
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="password" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="password" name="password">
-                            </div>
-
-                            <div class="d-grid">
-                                <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
-                            </div>
-
-                            <div class="text-center">
-                                <a href="#" class="forgot-password-link">¿Olvidaste tu contraseña?</a>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
+    
+    <div class="form-container">
+        <h2>Iniciar Sesión</h2>
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li class="{{ message.tags }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        <form method="post" action="{% url 'inise' %}">
+            {% csrf_token %}
+            <div class="form-field">
+                {{ form.username.label_tag }}
+                {{ form.username }}
             </div>
-        </div>
+            <div class="form-field">
+                {{ form.password.label_tag }}
+                {{ form.password }}
+            </div>
+            <input type="submit" value="Iniciar Sesión">
+        </form>
     </div>
 
     <script src="{% static 'js/script.js' %}"></script>
 </body>
-
 </html>
